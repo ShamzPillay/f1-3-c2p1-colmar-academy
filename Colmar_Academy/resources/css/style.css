@@ -1,0 +1,837 @@
+/* Universal Styles */
+html {
+  font-size: 16px;
+}
+
+/* Nav Bar and Banner section */
+#desktop {
+  display: flex;
+  height: 4rem;
+  position: fixed;
+  z-index: 15;
+  width: 80%;
+  background-color: white;
+  opacity: 1;
+  margin-top: 0rem;
+}
+
+#mobile {
+  display: none;
+}
+
+#logo {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  padding-left: 1.5rem;
+}
+
+#menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 1.5rem;
+}
+
+#logo h2,svg {
+  line-height: 2rem;
+  font-family: 'Philosopher', sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  font-family: 'Philosopher', sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+nav li:nth-child(1n+0) {
+  margin-right: 1rem;
+}
+
+nav li:last-child {
+  margin-right: 0rem;
+}
+
+.dtopbanner {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  position: relative;
+  z-index: 1;
+  top: 4rem;
+  background-color: white;
+}
+
+.banner-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: lightgrey;
+}
+
+#mbanner-content {
+  display: none;
+}
+
+.banner-image-container {
+  width: 60%;
+  height: auto;
+  margin: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  background-color:red;
+}
+
+.banner-image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: all 0.2s ease-in;
+  -webkit-transtion: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+}
+
+.banner-image-container img:hover {
+  width: 100%;
+  height: auto;
+}
+
+#banner-right {
+  width: 40%;
+  height: 70%;
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#banner-right #banner-right-text h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-top: 12rem;
+  font-family: 'Philosopher', sans-serif;
+  color: black;
+}
+
+#banner-right h3 {
+  font-size: 1.3rem;
+  margin-top: 2rem;
+  font-family: 'Work Sans', sans-serif;
+  line-height: 1.4;
+}
+
+.split-image-container {
+  width: 60%;
+  height: auto;
+  margin: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  background-color:white;
+}
+
+.desktop-split-panes {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  margin-top: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.thesis-container .desktop-split-panes {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  margin-top: 2.5rem;
+  background-color: black;
+  margin-bottom: 2rem;
+}
+
+#mobile-section {
+  display: none;
+}
+
+.split-image-container img {
+  width: 100%;
+  height: auto;
+  margin-right: 1.5rem;
+  display: flex;
+  transition: all 0.2s ease-in;
+  -webkit-transtion: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+}
+
+nav ul .list:hover, #signin:hover {
+  color: grey;
+}
+
+#btn span:hover {
+  background-color: rgb(50, 52, 189);
+  border: 2px solid red;
+  color: white;
+  font-size: 1.2rem;
+  transition: all 1s ease 0.25s;
+}
+
+.split-image-container img:hover {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+#btn span {
+  display: block;
+  background-color: white;
+  border: 3px solid black;
+  text-align: center;
+  margin-top: 1.5rem;
+  width: 60%;
+  height: 5%;
+  padding: 0.5rem;
+  margin-bottom: 2rem;
+  font-family: 'Philosopher', sans-serif;
+}
+
+#banner-right-text {
+  margin-top: -5rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+#banner-right-text h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  line-height: 1.5rem;
+}
+
+#info-right {
+  width: 40%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: navy;
+  margin: 1rem 0rem;
+}
+
+.box1,.box2,.box3 {
+  display: flex;
+  width: 90%;
+  padding: 1rem;
+}
+
+.box2 .box-text-container,.box1 .box-text-container,.box3 .box-text-container {
+  background-color: white;
+  height: 10.2rem;
+}
+
+.box-text {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.box-text p, .box-text h6 {
+  margin-top: -0.5rem;
+  margin-left: 1rem;
+  line-height: 1.4;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.box-text h1 {
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.box-text-container {
+  width: 65%;
+  height: 11.3rem;
+}
+
+.image2 {
+  width: 35%;
+  height: 100%;
+}
+
+#split-image-text {
+  width: 97%;
+}
+
+#split-image-text h1, #thesis-image-text h1 {
+  font-size: 2.5rem;
+  margin-left: 1rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  font-family: 'Philosopher', sans-serif;
+}
+
+#split-image-text p, #thesis-image-text p {
+  line-height: 1.4;
+  font-family: 'Philosopher', sans-serif;
+  font-size: 1.1rem;
+  margin-left: 1rem;
+}
+
+#banner-right-text span {
+  margin-top: 1rem;
+}
+
+/* learning section*/
+#desktop-learning {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: navy;
+}
+
+#desktop-learning h1 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-top: 2.5rem;
+  margin-bottom: 2rem;
+  margin-left: 40%;
+  width: 30%;
+  font-family: 'Philosopher', sans-serif;
+  color: white;
+}
+
+#course-box1,#course-box3,#course-box4,#course-box5,#course-box6 {
+  width: 300px;
+  height: 100%;
+  background-color: white;
+}
+
+#course-box2 {
+  width: 300px;
+  height: 100%;
+  background-color: white;
+}
+
+#course-box1,#course-box2,#course-box3,#course-box5,#course-box6,#course-box4 {
+  margin-left: 2rem;
+}
+
+#course-box4,#course-box5,#course-box6 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.course-image-container {
+  width: 100%;
+  height: auto;
+}
+
+.course-image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+#course-box1 h3,#course-box2 h3,#course-box3 h3,#course-box4 h3,#course-box5 h3,#course-box6 h3 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  font-family: 'Work Sans', sans-serif;
+  margin: 0 auto;
+  margin-left: 1rem;
+}
+
+#course-box1 h4,#course-box2 h4,#course-box3 h4,#course-box4 h4,#course-box5 h4,#course-box6 h4 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-family: 'Work Sans', sans-serif;
+  margin-left: 1rem;
+}
+
+#course-box1 p,#course-box2 p,#course-box3 p,#course-box4 p,#course-box5 p,#course-box6 p {
+  margin-left: 1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  font-family: 'Work Sans', sans-serif;
+}
+
+#course-box2 p {
+  margin-bottom: 0.59rem;
+}
+
+.courses:nth-child(1n+0) p {
+  font-family: 'raleway', sans-serif;
+}
+
+.image-container4 {
+  width: 25%;
+  height: 7rem;
+}
+
+.courses {
+  display: flex;
+  flex-wrap: wrap;
+  height: 92%;
+  width: 77.87%;
+  margin-left: 4.5rem;
+  margin-right: 4.5rem;
+  margin: 0 auto;
+  background-color: lightgray;
+}
+
+.thesis-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: green;
+}
+
+.thesis-container h1 {
+  display: block;
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-top: 2.5rem;
+  margin-bottom: 2rem;
+  margin-left: 40%;
+  width: 30%;
+  font-family: 'source serif pro', serif;
+  background-color: green;
+}
+
+.split-image-container video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+#thesis-image-text {
+  width: 60%;
+  margin-left: 1rem;
+}
+
+.image-container video {
+  height: 60%;
+}
+
+footer {
+  display: flex;
+  height: 5rem;
+  background-color: lightgray;
+}
+
+#footer-text {
+  width: 100%;
+  display: flex;
+  font-family: 'Philosopher', sans-serif;
+  font-weight: bold;
+}
+
+#copyright {
+  margin-top: 1rem;
+  display: flex;
+  flex-grow: 1;
+  margin-left: 1.5rem;
+}
+
+#footer-text ul li {
+  display: inline-block;
+  margin-right: 1rem;
+  list-style: none;
+  margin-top: 1rem;
+  font-family: 'source serif pro', serif;
+}
+
+/*media query for desktop*/
+@media only screen and (max-width:1600px) {
+  #desktop {
+    width: 90%;
+  }
+
+  #desktop-learning {
+    margin: 0 auto;
+  }
+
+  #desktop-learning h1 {
+    width: 25%;
+    text-align: center;
+  }
+
+  .box-text-container .box-text p {
+    font-size: 1rem;
+    margin-top: 1rem;
+    line-height: 1;
+  }
+
+  .banner-image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: all 0.2s ease-in;
+    -webkit-transtion: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    overflow: hidden;
+  }
+
+  .banner-image-container img:hover {
+    width: 100%;
+    height: auto;
+  }
+
+  #info-right .box1 .image-container2 img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  #info-right .box2 .image-container2 img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  #info-right .box3 .image-container2 img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+/*media query for tablet in landscape*/
+@media only screen and (max-width:1434px) {
+  #desktop {
+    width: 100%;
+  }
+
+  #maincontainer {
+    width: 100%;
+  }
+
+  #banner-right  #banner-right-text h1 {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+  }
+
+  .image-container4 {
+    width: 35%;
+  }
+
+  .image-container2 {
+    width: 35%;
+  }
+}
+
+/*media query for tablet in portrait*/
+@media only screen and (max-width:1064px) {
+  #maincontainer {
+    width: 100%;
+  }
+
+  #desktop {
+    width: 100%;
+  }
+
+  .image-container2 {
+    width: 35%;
+    height: auto;
+  }
+
+  .courses {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+  }
+
+  .box-text h1,.box-text p {
+    font-size: 1rem;
+    line-height: normal;
+    margin-top: -0.987rem;
+  }
+
+  .image-container2 img {
+    width: 100%;
+    height: 7rem;
+    display: block;
+  }
+
+  .image-container4 {
+    width: 35%;
+  }
+
+  #course-box4 {
+    margin-top: 2rem;
+  }
+
+  #course-box1 {
+    margin-left: 2rem;
+  }
+
+  #course-box3 {
+    margin-left: 1rem;
+  }
+
+  #course-box1,#course-box2,#course-box3,#course-box5 {
+    margin-top: 2rem;
+  }
+
+  #banner-right #banner-right-text h1 {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+  }
+
+  #writer h3 {
+    margin-left: 2rem;
+  }
+
+  #banner-right {
+    width: 45%;
+    height: 40%;
+  }
+
+  #course-box6 {
+    margin-top: 2rem;
+  }
+
+  #writer span {
+    width: 50%;
+  }
+
+  #desktop-learning h1 {
+    width: 30%;
+  }
+}
+
+/*media query for mobile*/
+@media only screen and (max-width:696px) {
+  #maincontainer {
+    width: 90%;
+  }
+
+  .dtopbanner,.desktop-split-panes {
+    display: none;
+  }
+
+  #mobile-section {
+    display: block;
+    background-color: white;
+  }
+
+  #desktop {
+    display: none;
+  }
+
+  #mobile {
+    display: block;
+    width: 100%;
+    height: 4rem;
+    background-color: white;
+  }
+
+  #mbanner-content {
+    display: block;
+    width: 100%;
+    height: 30%;
+  }
+
+  #m-image-container {
+    width: 100%;
+    height: auto;
+  }
+
+  #m-image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  #mbanner-right-text h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+    font-family: 'Philosopher', sans-serif;
+    background-color: lightgray;
+  }
+
+  #mbanner-right-text h3 {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    font-family: 'Work Sans', sans-serif;
+  }
+
+  #mbanner-right-text {
+    background-color: lightgray;
+  }
+
+  #iconmenu {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+  }
+
+  #btn {
+    margin-bottom: 1rem;
+  }
+
+  #mbanner-right-text #btn span {
+    margin-left: 17%;
+    font-size: 1.3rem;
+    font-family: 'Philosopher', sans-serif;
+  }
+
+  #iconmenu img {
+    height: 50%;
+    width: 10%;
+    margin: 0rem 1.5rem;
+    margin: 0 auto;
+  }
+
+  #iconmenu img:hover {
+    background-color: cornflowerblue;
+    transition: background-color 0.5s ease-in-out 0.25s;
+  }
+
+  #m-info-content {
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+  }
+
+  #mbox1,#mbox2,#mbox3 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile-image-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .mobile-image-container img {
+    width: 90%;
+    margin-left: 1rem;
+  }
+
+  .mbox-text-container,.mbox-text {
+    width: 100%;
+    color: white;
+    text-align: center;
+  }
+
+  .mbox-text h1 {
+    margin-left: 1rem;
+    font-size: 1.4rem;
+  }
+
+  .mbox-text p {
+    margin-top: 1rem;
+    line-height: 1.2;
+  }
+
+  .mbox-text a {
+    color: gray;
+  }
+
+  #desktop-learning {
+    display: none;
+  }
+
+  #mobile-learning {
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+  }
+
+  #mobile-learning p {
+    text-align: center;
+    font-size: 1.9rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  #mobile-learning h1 {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    font-weight: bold;
+  }
+
+  .m-course-box {
+    border: 1px solid black;
+    margin-top: 0.5rem;
+    text-align: center;
+    background-color: whitesmoke;
+  }
+
+  .m-course-box h1 {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    margin-left: 1rem;
+  }
+
+  .m-course-box:last-child {
+    margin-bottom: 2rem;
+  }
+
+  .m-course-box:hover {
+    background-color: cornflowerblue;
+    color: navy;
+    transition: all 0.5s ease-in-out 0.25s;
+  }
+
+  #desktop-learning {
+    display: none;
+  }
+
+  #thesis-mobile h1 {
+    font-size: 1.9rem;
+    font-weight: bold;
+    margin-top: 1px;
+    margin-bottom: 2rem;
+    text-align: center;
+    background-color: blue;
+    color: white;
+  }
+
+  #thesis-mobile video {
+    margin-bottom: 1.5rem;
+  }
+
+  #footer-text ul {
+    display: none;
+  }
+
+  #footer-text #copyright {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Philosopher', sans-serif;
+  }
+
+  #copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
